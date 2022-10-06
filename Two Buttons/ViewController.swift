@@ -9,11 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var label: UILabel!
+    @IBOutlet var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func setText(_ sender: Any) {
+        label.text = textField.text
+    }
+    
+    @IBAction func clearText(_ sender: Any) {
+        
+        label.text = ""
+    }
 }
 
